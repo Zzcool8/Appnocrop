@@ -25,7 +25,7 @@ const CameraLoadingScreen = props => {
             }
         }
 
-        await axios.post("https://updateapp.azurewebsites.net/get_label",
+        await axios.post("https://appnocrop.azurewebsites.net/get_label",
         data, options).then(res => {
             console.log(res.data);
             const dataResponse = res.data;
